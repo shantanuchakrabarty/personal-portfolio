@@ -5,7 +5,9 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f0f1a;
+    color: #e0e0e0;
     line-height: 1.6;
 }
 
@@ -16,13 +18,12 @@ body {
     align-items: center;
     justify-content: center;
     background: linear-gradient(135deg, #1a1a2e, #16213e);
-    color: white;
     text-align: center;
     padding: 20px;
 }
 
 .hero-content h1 {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin-bottom: 15px;
 }
 
@@ -32,8 +33,8 @@ body {
 
 .hero-content p {
     font-size: 1.3rem;
-    margin-bottom: 30px;
-    color: #ccc;
+    margin-bottom: 35px;
+    color: #aaa;
 }
 
 .hero-buttons {
@@ -43,11 +44,12 @@ body {
 }
 
 .btn {
-    padding: 12px 30px;
+    padding: 14px 32px;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
+    font-weight: 600;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .btn {
@@ -63,10 +65,68 @@ body {
 .btn-outline {
     background-color: transparent;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #00d9ff;
 }
 
 .btn-outline:hover {
-    background-color: white;
+    background-color: #00d9ff;
+    color: #1a1a2e;
+}
+
+/* About Section */
+.about {
+    padding: 80px 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.4rem;
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.about p {
+    font-size: 1.15rem;
+    color: #cccccc;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Skills Section */
+.skills {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skills h2 {
+    font-size: 2.4rem;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.skill-card {
+    background-color: #1f1f2e;
+    padding: 25px 15px;
+    text-align: center;
+    border-radius: 12px;
+    font-weight: 600;
+    color: #e0e0e0;
+    transition: all 0.3s ease;
+    border: 1px solid #2a2a3d;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    background-color: #00d9ff;
     color: #1a1a2e;
 }
