@@ -11,7 +11,7 @@ body {
     line-height: 1.6;
 }
 
-/* Hero Section */
+/* ==================== HERO SECTION ==================== */
 .hero {
     height: 100vh;
     display: flex;
@@ -73,7 +73,7 @@ body {
     color: #1a1a2e;
 }
 
-/* About Section */
+/* ==================== ABOUT SECTION ==================== */
 .about {
     padding: 80px 20px;
     max-width: 900px;
@@ -94,7 +94,7 @@ body {
     margin: 0 auto;
 }
 
-/* Skills Section */
+/* ==================== SKILLS SECTION ==================== */
 .skills {
     padding: 60px 20px;
     max-width: 1000px;
@@ -129,4 +129,74 @@ body {
     transform: translateY(-8px);
     background-color: #00d9ff;
     color: #1a1a2e;
+}
+
+/* ==================== PROJECTS SECTION ==================== */
+.projects {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.projects h2 {
+    font-size: 2.4rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background-color: #1f1f2e;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #2a2a3d;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    border-color: #00d9ff;
+}
+
+.project-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.project-card p {
+    color: #cccccc;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.tech-stack {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.tech-stack span {
+    background-color: #2a2a3d;
+    color: #00d9ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.project-links a {
+    color: #00d9ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.project-links a:hover {
+    text-decoration: underline;
 }
